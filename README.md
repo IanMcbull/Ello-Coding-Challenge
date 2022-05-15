@@ -1,4 +1,4 @@
-# ello-coding-challenge
+# Ello - Full Stack Engineer Coding Challenge
 This is my submission to the ello-coding challenge for the fullstack position. My solution uses vuejs and vue apollo to query the provided api
 
 ```javascript
