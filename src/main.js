@@ -5,6 +5,7 @@ import VueApollo from 'vue-apollo'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import router from './router'
 
 // HTTP connection to the API
 const httpLink = createHttpLink({
@@ -27,5 +28,6 @@ const apolloProvider = new VueApollo({
 new Vue({
   vuetify,
   apolloProvider,
+  router,
   render: h => h(App)
 }).$mount('#app')
