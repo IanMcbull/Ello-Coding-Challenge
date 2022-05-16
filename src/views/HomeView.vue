@@ -2,7 +2,7 @@
   <v-container>
     <div class="home">
     <div v-if="$apollo.loading" style="color: green;"><vue-loaders-ball-scale-ripple-multiple color="currentColor" scale="1"></vue-loaders-ball-scale-ripple-multiple></div>
-    <div class="pages">
+    <div class="pages" v-else>
     <p>{{book.pages[1].content}}</p>
     <p>{{book.pages[2].content}}</p>
     </div>
@@ -43,7 +43,7 @@ export default {
  }
  .pages{
    display: flex;
-   font-size:3rem;
+   font-size:3em;
    gap:100px;
  }
  .home > .content{
